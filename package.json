@@ -11,6 +11,7 @@
     "test:watch": "vitest"
   },
   "devDependencies": {
+    "@effect/vitest": "^0.29.0",
     "@types/bun": "^1.3.13",
     "@types/node": "^25.6.0",
     "oxfmt": "^0.47.0",
