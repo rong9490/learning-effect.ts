@@ -7,8 +7,8 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "vtest": "vitest run",
+    "vtest:watch": "vitest"
   },
   "devDependencies": {
     "@effect/vitest": "^0.29.0",

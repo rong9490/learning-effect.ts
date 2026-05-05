@@ -1,0 +1,34 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "import", "vitest", "jsx-a11y"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2022": true,
+    "vitest": true
+  },
+  "globals": {
+    "IsDev": "readonly",
+    "IsTest": "readonly",
+    "IsProd": "readonly",
+    "TK_NODE_ENV": "readonly",
+    "TK_APP_TITLE": "readonly",
+    "TK_SERVER_PORT": "readonly",
+    "serverEnv": "readonly"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/no-unassigned-import": "off",
+    "vitest/require-mock-type-parameters": "off",
+    "jest/require-to-throw-message": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "no-unused-vars": "off",
+    "expect-expect": "warn",
+    "heading-has-content": "warn"
+  },
+  "ignorePatterns": ["src/routeTree.gen.ts"]
+}
